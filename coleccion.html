@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección | Caprichos Boutique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --color-primary: #1a1a1a;
+            --color-secondary: #d4af37;
+            --color-bg: #fdfbf7;
+            --color-card-bg: #ffffff;
+            --color-text: #4a4a4a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--color-bg); color: var(--color-text); line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--color-primary); }
+
+        header { background-color: var(--color-card-bg); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .navbar { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .logo { font-size: 1.8rem; font-weight: 700; text-decoration: none; color: var(--color-primary); }
+        .logo span { color: var(--color-secondary); }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: var(--color-text); transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--color-secondary); }
+        .nav-icons a { font-size: 1.2rem; color: var(--color-primary); margin-left: 20px; text-decoration: none; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+        .page-header { text-align: center; margin-bottom: 40px; }
+        .page-header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .product-card { background-color: var(--color-card-bg); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-img { height: 350px; width: 100%; object-fit: cover; }
+        .product-info { padding: 20px; text-align: center; }
+        .product-title { font-size: 1.1rem; font-weight: 500; margin-bottom: 10px; }
+        .product-price { font-size: 1.1rem; color: var(--color-secondary); font-weight: 600; margin-bottom: 15px; }
+        .btn-outline { background: transparent; color: var(--color-primary); border: 1px solid var(--color-primary); padding: 8px 20px; border-radius: 20px; font-size: 0.9rem; cursor: pointer; text-decoration: none; transition: all 0.3s; display: inline-block;}
+        .btn-outline:hover { background-color: var(--color-primary); color: #fff; }
+
+        footer { background-color: var(--color-primary); color: #fff; padding: 40px 20px; text-align: center; margin-top: 60px; }
+        footer p { color: #888; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">Caprichos<span>Boutique</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="coleccion.html" class="active">Colección</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Nuestra Colección Completa</h1>
+            <p>Explora todas las prendas diseñadas para resaltar tu elegancia.</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Vestido" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Vestido Midi Elegante</h3>
+                    <p class="product-price">$899.00 MXN</p>
+                    <a href="#" class="btn-outline">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80" alt="Blazer" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Blazer Oversized Neutro</h3>
+                    <p class="product-price">$1,250.00 MXN</p>
+                    <a href="#" class="btn-outline">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=600&q=80" alt="Set" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Set de Punto Minimalista</h3>
+                    <p class="product-price">$1,100.00 MXN</p>
+                    <a href="#" class="btn-outline">Añadir al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Abrigo" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Abrigo Trench Clásico</h3>
+                    <p class="product-price">$1,850.00 MXN</p>
+                    <a href="#" class="btn-outline">Añadir al Carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 caprichosboutique.com. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
